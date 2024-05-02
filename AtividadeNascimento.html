@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    
+<h1>Calculando a Idade</h1>
+
+<p>Nome da Primeira pessoa: <span id="PrimeiraPessoa"></span></p>
+<p>Idade: <span id="IdadeUm"></span></p>
+<p>Nome da Segunda pessoa: <span id="SegundaPessoa"></span></p>
+<p>Idade: <span id="IdadeDois"></span></p>
+<p>A Pessoa mais nova é: <span id="IdadeFinal"></span></p>
+
+<script>
+
+let primeirapessoa
+let idade1
+let segundapessoa
+let idade2
+let ano1
+let ano2
+let idadefinal
+
+primeirapessoa = prompt("Digite o Nome da Primeira pessoa: ")
+idade1 = Number (prompt("Digite o Ano de Nascimento: "))
+segundapessoa = prompt("Digite o Nome da Segunda pessoa: ")
+idade2 = Number (prompt("Digite o Ano de Nascimento: "))
+
+
+ano1 = 2024 - idade1 
+
+ano2 = 2024 - idade2 
+
+if(ano1 > ano2){
+    idadefinal = primeirapessoa
+}
+
+if(ano1 < ano2){
+    idadefinal = segundapessoa
+}
+
+if(ano2 > ano1){
+    idadefinal = primeirapessoa
+}
+
+if(ano2 < ano1){
+    idadefinal = segundapessoa  
+}
+
+console.log(idadefinal)
+
+document.getElementById("PrimeiraPessoa") .innerHTML = primeirapessoa
+document.getElementById("IdadeUm") .innerHTML = ano1
+document.getElementById("SegundaPessoa") .innerHTML = segundapessoa
+document.getElementById("IdadeDois") .innerHTML = ano2
+document.getElementById("IdadeFinal") .innerHTML = idadefinal
+
+
+</script>
+
+
+
+</body>
+</html>

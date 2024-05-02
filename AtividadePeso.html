@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+
+    <h1> Dados de da pessoa e peso</h1>
+
+    <p>Nome da primeira pessoa: <span id="PrimeiraPessoa"></span></p>
+    <p>Peso: <span id="PrimeiroPeso"></span></p>
+    <p>Nome da Segunda pessoa: <span id="SegundaPessoa"></span></p>
+    <p>Peso: <span id="SegundoPeso"></span></p>
+    <P>A Pessoa mais obesa é: <span id="Resultado"></span></P>
+
+    <script>
+        
+        let primeirapessoa
+        let peso1
+        let segundapessoa 
+        let peso2
+        let resultado
+      
+
+        primeirapessoa = prompt ("Digite o nome da primeira pessoa:")
+        peso1 = Number (prompt ("Digite seu peso:"))
+        segundapessoa = prompt ("Digite o nome da segunda pessoa:")
+        peso2 =  Number (prompt ("Digite seu peso:"))
+
+        if(peso1 > peso2){
+            resultado = primeirapessoa
+        }
+
+        if(peso2 > peso1){
+            resultado = segundapessoa
+        }
+
+     
+
+        document.getElementById("PrimeiraPessoa") .innerHTML = primeirapessoa
+        document.getElementById("PrimeiroPeso") .innerHTML = peso1
+        document.getElementById("SegundaPessoa") .innerHTML = segundapessoa
+        document.getElementById("SegundoPeso") .innerHTML = peso2
+        document.getElementById("Resultado") .innerHTML = resultado
+
+
+
+    </script>
+    
+</body>
+</html>
